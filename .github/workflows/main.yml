@@ -1,0 +1,18 @@
+info_items = ("就诊时间", "科室", "患者姓名", "患者性别", "患者年龄",  
+              "门诊号", "主诉", "既往史", "体格检查", "初诊判断",  
+              "处理", "医生签名")  
+patients_info = {}  
+  
+for number in range(50):  
+    patient_info = {}  
+    for item in info_items:  
+        value = input(item + ":")  
+        patient_info[item] = value  # 使用英文半角方括号  
+    patients_info["patient_" + str(number)] = patient_info  # 使用正确的字典名  
+    result = input("是否是最后一个患者？(是/否):")  
+    if result == "是":  
+        break  
+  
+# 如果需要，可以打印出所有患者的信息  
+for key, value in patients_info.items():  
+    print(key, value)
