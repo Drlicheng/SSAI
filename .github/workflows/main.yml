@@ -3,7 +3,7 @@ info_items = ("就诊时间", "科室", "患者姓名", "患者性别", "患者�
               "处理", "医生签名")  
 patients_info = {}  
   
-for number in range(50):  
+for number in range(50):
     patient_info = {}  
     for item in info_items:  
         value = input(item + ":")  
